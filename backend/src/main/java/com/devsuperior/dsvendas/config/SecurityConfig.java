@@ -1,4 +1,4 @@
-package com.devesuperior.dsvendas.config;
+package com.devsuperior.dsvendas.config;
 
 import java.util.Arrays;
 
@@ -41,5 +41,3 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		return source;
 	}
 }
-
-

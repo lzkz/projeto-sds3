@@ -1,20 +1,21 @@
-package com.devesuperior.dsvendas.dto;
+package com.devsuperior.dsvendas.dto;
 
 import java.time.LocalDate;
 
-import com.devesuperior.dsvendas.entities.Sale;
+import com.devsuperior.dsvendas.entities.Sale;
 
 public class SaleDTO {
-
+	
 	private Long id;
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
-
+	
 	private SellerDTO seller;
-
+	
 	public SaleDTO() {
+		
 	}
 
 	public SaleDTO(Long id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDTO seller) {
@@ -25,7 +26,7 @@ public class SaleDTO {
 		this.date = date;
 		this.seller = seller;
 	}
-
+	
 	public SaleDTO(Sale entity) {
 		id = entity.getId();
 		visited = entity.getVisited();
@@ -82,4 +83,5 @@ public class SaleDTO {
 	public void setSeller(SellerDTO seller) {
 		this.seller = seller;
 	}
+
 }
