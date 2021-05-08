@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { type } from 'node:os';
+
 import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts';
 import { SaleSuccess } from 'types/sale';
@@ -11,7 +11,7 @@ type SeriesData ={
     data: number[];
 }
 
-type chartData = {
+type ChartData = {
     labels: {
         categories: string[];
     };
@@ -20,7 +20,7 @@ type chartData = {
 
 function BarChart() {
     
-    const [chartData, setChartData] = useState<chartData>({
+    const [chartData, setChartData] = useState<ChartData>({
         labels: {
             categories: []
         },
